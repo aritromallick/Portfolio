@@ -2,82 +2,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aritro Mallick | AI Boss Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Aritro Mallick - AI Boss</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
       font-family: 'Inter', sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #f1f1f1;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #facc15;
+    }
+    p {
+      font-size: 1.2rem;
       line-height: 1.6;
     }
-    header {
-      padding: 80px 20px;
-      text-align: center;
-      background: #1e1e1e;
+    .cta {
+      margin-top: 2rem;
     }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 20px;
+    .cta a {
+      text-decoration: none;
+      background: #facc15;
+      color: #111;
+      padding: 1rem 2rem;
+      margin: 0 1rem;
+      border-radius: 10px;
+      font-weight: 700;
+      transition: all 0.3s ease;
     }
-    header p {
-      font-size: 1.2rem;
-      color: #bbbbbb;
-      max-width: 600px;
-      margin: 0 auto 20px;
-    }
-    .btn {
-      padding: 12px 24px;
-      margin: 10px 5px;
-      font-weight: 600;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .primary-btn {
-      background: #00c896;
-      color: #0f0f0f;
-    }
-    .secondary-btn {
-      background: #333;
-      color: #fff;
-      border: 2px solid #00c896;
+    .cta a:hover {
+      background: #fde68a;
     }
     section {
-      padding: 60px 20px;
-      max-width: 800px;
-      margin: 0 auto;
+      padding: 4rem 1rem;
     }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #00c896;
+    #support img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>AI’s not taking my job. I gave it one.</h1>
-    <p>I’m Aritro Mallick—the human who turned AI into an unpaid intern.<br>
-    While others panic, I’m delegating tasks to ChatGPT, Copilot, and their robotic cousins. I don’t compete with AI—I boss it around.</p>
-    <button class="btn primary-btn">See My AI Minions in Action</button>
-    <button class="btn secondary-btn">Hire the Human in Charge</button>
-  </header>  <section>
-    <h2>About Me</h2>
-    <p>Hello, I’m Aritro.</p>
-    <p>I make machines work for me. Not in a villain-with-a-lab way. More like:</p>
-    <ul>
-      <li>“Hey AI, clean this data.”</li>
-      <li>“Hey Copilot, write that function.”</li>
-      <li>“Hey automation, stop slacking.”</li>
-    </ul>
-    <p>I combine coding + AI tools to solve problems, automate boring stuff, and make people say “Wait… you built that?!”</p>
-  </section>
+  <div class="container">
+    <section>
+      <h1>AI’s not taking my job. I gave it one.</h1>
+      <p>I’m <strong>Aritro</strong>—the human who turned AI into an unpaid intern.</p>
+      <p>While others panic, I’m delegating tasks to ChatGPT, Copilot, and their robotic cousins.<br>I don’t compete with AI—I boss it around.</p>
+      <div class="cta">
+        <a href="https://aritromallick.github.io/ai-minions" target="_blank">See My AI Minions in Action</a>
+        <a href="#support">Hire the Human in Charge</a>
+      </div>
+    </section><section>
+  <h2>About Me (Cheeky Boss Mode)</h2>
+  <p>Hello, I’m <strong>Aritro</strong>.</p>
+  <p>I make AI work for me.<br>
+  Not in a villain-with-a-lab way. More like:</p>
+  <p>“Hey AI, clean this data.”<br>
+     “Hey Copilot, write that function.”<br>
+     “Hey automation, stop slacking.”</p>
+  <p>I combine coding + AI tools to solve problems, automate boring stuff, and make people say <em>“Wait… you built that?!”</em></p>
+</section>
+
+<section id="support">
+  <h2>Support the Human in Charge</h2>
+  <p>Like what you see? Buy me a coffee and keep the AI minions well-oiled.</p>
+  <div>
+    <img src="coffee-qr.png" alt="Buy Me a Coffee QR Code" />
+    <br />
+    <a href="https://www.buymeacoffee.com/AritroMallick" target="_blank">buymeacoffee.com/AritroMallick</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Aritro Mallick. AI works. I lead.
+</footer>
+
+  </div>
 </body>
 </html>
