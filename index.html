@@ -1,102 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aritro Mallick | AI Boss Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>arfromallick.github.io</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
-      font-family: 'Inter', sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-    header {
-      padding: 80px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-    header p {
-      font-size: 1rem;
-      color: #bbbbbb;
-      max-width: 600px;
-      margin: 0 auto 20px;
-    }
-    .btn {
-      padding: 12px 24px;
-      margin: 10px 5px;
-      font-weight: 600;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.3s ease;
-      width: auto;
-      max-width: 90%;
-    }
-    .btn:hover {
-      transform: translateY(-2px);
-      opacity: 0.9;
-    }
-    .primary-btn {
-      background: #00c896;
-      color: #0f0f0f;
-    }
-    .secondary-btn {
-      background: #333;
-      color: #fff;
-      border: 2px solid #00c896;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #00c896;
-    }
-    section p,
-    section ul {
-      font-size: 0.95rem;
-      color: #dddddd;
-    }
-    ul {
-      margin: 10px 0 20px 20px;
-    }
-    #contact {
-      text-align: center;
-    }
-    #contact a {
-      color: #00c896;
-      text-decoration: none;
-      font-weight: 600;
-    }
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+    }main {
+  flex: 1;
+  padding: 2rem;
+  position: relative;
+}
+
+.rotated-text {
+  writing-mode: vertical-lr;
+  transform: translateY(-50%) rotate(180deg);
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .rotated-text {
+    font-size: 1rem;
+    right: 0.2rem;
+  }
+}
+
   </style>
 </head>
 <body>
-  <header>
-    <h1>AI’s not taking my job. I gave it one.</h1>
-    <a href="projects.html" class="btn primary-btn">See My AI Minions in Action</a>
-    <a href="#contact" class="btn secondary-btn">Hire the Human in Charge</a>
-  </header>
+  <main>
+    <div class="rotated-text">AI’s not taking my job. I gave it one.</div><h1>Welcome to My Website</h1>
+<p>This is the main content section. You can add buttons, projects, etc., here.</p>
 
-  <section id="contact">
+  </main>  <footer id="contact">
     <h2>Contact</h2>
     <p>Interested in working together or hiring me?</p>
     <p>Send me an email at <a href="mailto:aritromallick2022@gmail.com">aritromallick2022@gmail.com</a></p>
-  </section>
+  </footer>
 </body>
 </html>
