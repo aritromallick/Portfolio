@@ -3,111 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Minion Projects | Aritro Mallick</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #f9fafb;
       color: #1f2937;
     }
-    header {
-      text-align: center;
-      padding: 3rem 1rem 1rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .back-home {
-      display: block;
-      text-align: center;
-      margin: 0 auto 2rem;
-      color: #00c896;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .projects-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .project-card {
-      background: #ffffff;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      padding: 2rem;
-      transition: transform 0.3s ease;
-      word-wrap: break-word;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    .project-card h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .project-card p {
-      margin: 0.5rem 0;
-    }
-    .project-card .ai-used {
-      font-style: italic;
-      color: #6b7280;
-    }
-    .project-card .funny-note {
+
+    a {
       color: #10b981;
-      font-weight: 600;
-    }
-    .project-card a {
-      display: inline-block;
-      margin-top: 1rem;
       text-decoration: none;
-      background: #1f2937;
-      color: #ffffff;
-      padding: 0.6rem 1.2rem;
-      border-radius: 0.5rem;
-      transition: background 0.3s ease;
+      font-weight: 500;
     }
-    .project-card a:hover {
-      background: #374151;
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      color: #6b7280;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #4b5563;
+      margin-bottom: 1rem;
+    }
+
+    .card .highlight {
+      color: #10b981;
+      font-weight: 500;
+    }
+
+    .view-live {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      background-color: #111827;
+      color: #ffffff;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .view-live:hover {
+      background-color: #374151;
     }
   </style>
 </head>
 <body>
-  <header>
-    <a href="index.html" class="back-home">← Back to Home</a>
+  <div class="container">
+    <a href="#">← Back to Home</a>
     <h1>Meet the Projects</h1>
-    <p>Built by Me. Backed by Bots.</p>
-  </header>
+    <p class="subtitle">Built by Me. Backed by Bots.</p>
 
-  <section class="projects-container">
-    <div class="project-card">
-      <h2>Global Time Tracker</h2>
-      <p class="ai-used">AI Used: ChatGPT</p>
-      <p>Track the current time across the world in a clean, modern UI.</p>
-      <p class="funny-note">Built faster than a timezone meeting could’ve ended.</p>
-      <a href="https://global-time-tracker-f7n1xi418-aritro-mallick-s-projects.vercel.app/" target="_blank">View Live</a>
-    </div>
+    <div class="projects-grid">
+      <div class="card">
+        <h2>Global Time Tracker</h2>
+        <p><span class="highlight">AI Used:</span> ChatGPT</p>
+        <p>Track the current time across the world in a clean, modern UI.<br><span class="highlight">Built faster than a timezone meeting could’ve ended.</span></p>
+        <a class="view-live" href="#">View Live</a>
+      </div>
 
-    <div class="project-card">
-      <h2>ClipKeeper</h2>
-      <p class="ai-used">AI Used: GitHub Copilot</p>
-      <p>Save and organize your clipboard clips with ease and style.</p>
-      <p class="funny-note">Because even my clipboard deserves structure.</p>
-      <a href="https://aritromallick.github.io/ClipKeeper/" target="_blank">View Live</a>
-    </div>
+      <div class="card">
+        <h2>ClipKeeper</h2>
+        <p><span class="highlight">AI Used:</span> GitHub Copilot</p>
+        <p>Save and organize your clipboard clips with ease and style.<br><span class="highlight">Because even my clipboard deserves structure.</span></p>
+        <a class="view-live" href="#">View Live</a>
+      </div>
 
-    <div class="project-card">
-      <h2>Excuse Generator</h2>
-      <p class="ai-used">AI Used: ChatGPT</p>
-      <p>Need a reason? This app spits out random (sometimes genius) excuses.</p>
-      <p class="funny-note">Excuses coded with care. Use responsibly.</p>
-      <a href="https://aritromallick.github.io/Excuse-Generator-/" target="_blank">View Live</a>
+      <div class="card">
+        <h2>Excuse Generator</h2>
+        <p><span class="highlight">AI Used:</span> ChatGPT</p>
+        <p>Need a reason? This app spits out random (sometimes genius) excuses.<br><span class="highlight">Excuses coded with care. Use wisely.</span></p>
+        <a class="view-live" href="#">View Live</a>
+      </div>
     </div>
-  </section>
+  </div>
 </body>
 </html>
