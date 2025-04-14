@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,11 +14,19 @@
     }
     header {
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 3rem 1rem 1rem;
     }
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
+    }
+    .back-home {
+      display: block;
+      text-align: center;
+      margin: 0 auto 2rem;
+      color: #00c896;
+      font-weight: 600;
+      text-decoration: none;
     }
     .projects-container {
       display: grid;
@@ -33,6 +42,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 2rem;
       transition: transform 0.3s ease;
+      word-wrap: break-word;
     }
     .project-card:hover {
       transform: translateY(-5px);
@@ -69,31 +79,35 @@
 </head>
 <body>
   <header>
+    <a href="index.html" class="back-home">← Back to Home</a>
     <h1>Meet the Projects</h1>
     <p>Built by Me. Backed by Bots.</p>
-  </header>  <section class="projects-container">
+  </header>
+
+  <section class="projects-container">
     <div class="project-card">
       <h2>Global Time Tracker</h2>
       <p class="ai-used">AI Used: ChatGPT</p>
       <p>Track the current time across the world in a clean, modern UI.</p>
       <p class="funny-note">Built faster than a timezone meeting could’ve ended.</p>
       <a href="https://global-time-tracker-f7n1xi418-aritro-mallick-s-projects.vercel.app/" target="_blank">View Live</a>
-    </div><div class="project-card">
-  <h2>ClipKeeper</h2>
-  <p class="ai-used">AI Used: GitHub Copilot</p>
-  <p>Save and organize your clipboard clips with ease and style.</p>
-  <p class="funny-note">Because even my clipboard deserves structure.</p>
-  <a href="https://aritromallick.github.io/ClipKeeper/" target="_blank">View Live</a>
-</div>
+    </div>
 
-<div class="project-card">
-  <h2>Excuse Generator</h2>
-  <p class="ai-used">AI Used: ChatGPT</p>
-  <p>Need a reason? This app spits out random (sometimes genius) excuses.</p>
-  <p class="funny-note">Excuses coded with care. Use responsibly.</p>
-  <a href="https://aritromallick.github.io/Excuse-Generator-/" target="_blank">View Live</a>
-</div>
+    <div class="project-card">
+      <h2>ClipKeeper</h2>
+      <p class="ai-used">AI Used: GitHub Copilot</p>
+      <p>Save and organize your clipboard clips with ease and style.</p>
+      <p class="funny-note">Because even my clipboard deserves structure.</p>
+      <a href="https://aritromallick.github.io/ClipKeeper/" target="_blank">View Live</a>
+    </div>
 
+    <div class="project-card">
+      <h2>Excuse Generator</h2>
+      <p class="ai-used">AI Used: ChatGPT</p>
+      <p>Need a reason? This app spits out random (sometimes genius) excuses.</p>
+      <p class="funny-note">Excuses coded with care. Use responsibly.</p>
+      <a href="https://aritromallick.github.io/Excuse-Generator-/" target="_blank">View Live</a>
+    </div>
   </section>
 </body>
 </html>
