@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,15 +10,22 @@
       margin: 0;
       padding: 0;
     }
-    body {
+    html, body {
+      height: 100%;
       font-family: 'Inter', sans-serif;
       background: #0f0f0f;
       color: #ffffff;
       line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
     }
     header {
       padding: 80px 20px;
       text-align: center;
+      background: #0f0f0f;
     }
     header h1 {
       font-size: 3rem;
@@ -42,12 +48,9 @@
       text-decoration: none;
       display: inline-block;
       transition: all 0.3s ease;
-      width: auto;
-      max-width: 90%;
     }
     .btn:hover {
-      transform: translateY(-2px);
-      opacity: 0.9;
+      transform: scale(1.05);
     }
     .primary-btn {
       background: #00c896;
@@ -76,13 +79,14 @@
     ul {
       margin: 10px 0 20px 20px;
     }
-    #contact {
+    footer {
+      padding: 2rem;
+      background-color: #1e1e1e;
       text-align: center;
     }
-    #contact a {
+    footer a {
       color: #00c896;
       text-decoration: none;
-      font-weight: 600;
     }
   </style>
 </head>
@@ -90,13 +94,15 @@
   <header>
     <h1>AI’s not taking my job. I gave it one.</h1>
     <a href="projects.html" class="btn primary-btn">See My AI Minions in Action</a>
-    <a href="#contact" class="btn secondary-btn">Hire the Human in Charge</a>
-  </header>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Interested in working together or hiring me?</p>
-    <p>Send me an email at <a href="mailto:aritromallick2022@gmail.com">aritromallick2022@gmail.com</a></p>
-  </section>
+    <button class="btn secondary-btn">Hire the Human in Charge</button>
+  </header>  <main>
+    <!-- Content can go here if needed -->
+  </main>  <footer>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Interested in working together or hiring me?</p>
+      <p>Send me an email at <a href="mailto:aritromallick2022@gmail.com">aritromallick2022@gmail.com</a></p>
+    </section>
+  </footer>
 </body>
 </html>
